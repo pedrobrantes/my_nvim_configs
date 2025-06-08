@@ -1,6 +1,6 @@
 local servers = {
   'pyright',
-  'tsserver',
+  'ts_ls',
   'html',
   'cssls',
   'lua_ls',
@@ -12,8 +12,13 @@ local servers = {
   'kotlin_language_server',
   'powershell_es',
   'sqlls',
-  'phan',
-  'texlab'
+  'texlab',
+  'intelephense',
+  'docker_compose_language_service',
+  'dockerls',
+  'clangd',
+  'rust_analyzer',
+  'helm_ls'
 }
 
 return servers
