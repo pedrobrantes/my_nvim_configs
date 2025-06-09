@@ -1,11 +1,11 @@
 require('hello')
-require('mappings')
-require('options')
-require('autocmd')
 require('lazy_installer')
 require('plugin_manager')
+require('options')
+require('mappings')
+require('autocmd')
 
--- Load Vim-Plug
+--[[ Load Vim-Plug
 vim.cmd [[
   call plug#begin('~/.local/share/nvim/plugged')
 ]]
@@ -16,25 +16,26 @@ vim.cmd [[
 -- Example:
 -- vim.cmd [[Plug 'preservim/nerdtree']]
 
--- End of the list of plugins
+--[[ End of the list of plugins
 vim.cmd [[
   call plug#end()
 ]]
 
--- Enable Vim Plug
+--[[ Enable Vim Plug
 vim.cmd [[
   call plug#begin('~/.config/nvim/plugged')
 ]]
 
--- Plugin for the Gruvbox Material theme
+--[[ Plugin for the Gruvbox Material theme
 vim.cmd [[
   Plug 'sainnhe/gruvbox-material'
 ]]
 
--- End the plugin block
+--[[ End the plugin block
 vim.cmd [[
   call plug#end()
 ]]
 
--- Configure the theme
+--[[ Configure the theme
 vim.cmd('colorscheme gruvbox-material')
+]]
